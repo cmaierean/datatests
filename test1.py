@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 
 def get_csv():
-	response = urllib2.urlopen("<enter URL>")
+	response = urllib2.urlopen("http://stat.columbia.edu/~rachel/datasets/nyt1.csv")
 	cr = csv.reader(response)
 	data = list(cr)
 	return data
